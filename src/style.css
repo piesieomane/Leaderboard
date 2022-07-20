@@ -124,7 +124,7 @@ body {
   font-size: 15px;
   box-shadow: 0.4rem 0.2rem 0.2rem #000;
   padding: 0.4rem 0.8rem;
-  transition: transform box-shadow;
+  transition: transform 0.2s ease-in-out;
 }
 
 .btn:active {
