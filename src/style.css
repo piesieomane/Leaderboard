@@ -7,7 +7,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #f5f5f5;
-  --var-color: rgb(32, 97, 102);
 }
 
 .main-container {
@@ -18,7 +17,7 @@ body {
 
 .header-title {
   font-size: 2.5em;
-  color: var(--var-color);
+  color: rgb(32, 97, 102);
   position: relative;
   text-align: start;
   font-weight: bold;
@@ -29,7 +28,7 @@ body {
 .header-title::before {
   position: absolute;
   content: attr(data-text);
-  text-shadow: 0 0 20px var(--var-color);
+  text-shadow: 0 0 20px rgb(32, 97, 102);
   filter: blur(10px) brightness(0.5);
   animation: flicker 2s linear forwards infinite;
   animation-delay: 0.5s;
@@ -125,7 +124,7 @@ body {
   font-size: 15px;
   box-shadow: 0.4rem 0.2rem 0.2rem #000;
   padding: 0.4rem 0.8rem;
-  transition: transform 100ms box-shadow 100ms;
+  transition: transform box-shadow;
 }
 
 .btn:active {
