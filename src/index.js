@@ -1,7 +1,7 @@
-import API_URL from './config';
-import addScore from './crud';
+import API_URL from './config.js';
+import addScore from './crud.js';
 import './style.css';
-import renderScores from './views';
+import renderScores from './views.js';
 
 const formAddEl = document.querySelector('.form-add');
 const btnRefreshEl = document.querySelector('.btn-refresh');

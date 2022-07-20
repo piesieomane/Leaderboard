@@ -1,4 +1,4 @@
-import API_URL from './config';
+import API_URL from './config.js';
 
 export default async (score) => {
   await fetch(API_URL, {
