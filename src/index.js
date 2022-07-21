@@ -1,18 +1,18 @@
-import API_URL from './config.js';
-import addScore from './crud.js';
+import API_URL from './package/setup.js';
+import addScore from './package/fetch.js';
 import './style.css';
-import renderScores from './views.js';
+import renderScores from './package/render.js';
 
-const formAddEl = document.querySelector('.form-add');
-const btnRefreshEl = document.querySelector('.btn-refresh');
-const { nameEl, scoreEl } = formAddEl.elements;
+const AddEl = document.querySelector('.form-add');
+const btnRefresh = document.querySelector('.btn-refresh');
+const { nameInput, scoreInput } = AddEl.elements;
 
-const formAddHandler = async (event) => {
-  event.preventDefault();
-  if (!nameEl.value || !scoreEl.value) return;
-  await addScore({ user: nameEl.value, score: +scoreEl.value });
-  nameEl.value = '';
-  scoreEl.value = '';
+const AddHandler = async (evt) => {
+  evt.preventDefault();
+  if (!nameInput.value || !scoreInput.value) return;
+  await addScore({ user: nameInput.value, score: +scoreInput.value });
+  nameInput.value = '';
+  // scoreInput.value = '';
 };
 
 const renderFromAPI = async () => {
@@ -21,5 +21,5 @@ const renderFromAPI = async () => {
   renderScores(data.result);
 };
 
-formAddEl.addEventListener('submit', formAddHandler);
-btnRefreshEl.addEventListener('click', renderFromAPI);
+AddEl.addEventListener('submit', AddHandler);
+btnRefresh.addEventListener('click', renderFromAPI);
