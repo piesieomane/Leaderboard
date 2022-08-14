@@ -31,11 +31,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Abdelmejid Oumer Ali**
+👤 **Omane Piesie Yeboah**
 
-- GitHub: [@amejid](https://github.com/piesieomane)
-- Twitter: [@amejidoumer](https://twitter.com/piesieyeboah)
-- LinkedIn: [amejid](https://linkedin.com/in/piesieomane)
+- GitHub: [@piesieomane](https://github.com/piesieomane)
+- Twitter: [@piesieyeboah](https://twitter.com/piesieyeboah)
+- LinkedIn: [piesie omane](https://linkedin.com/in/piesieomane)
 
 ## 🤝 Contributing
 
